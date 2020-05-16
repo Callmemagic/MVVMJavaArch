@@ -1,26 +1,21 @@
-package com.joe.mvvmjavaarch.view;
+package com.joe.taiwandelicacies.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
-import com.joe.mvvmjavaarch.adapter.RestaurantListAdapter;
-import com.joe.mvvmjavaarch.databinding.ActivityMainBinding;
-import com.joe.mvvmjavaarch.model.InfoFactory;
-import com.joe.mvvmjavaarch.model.InfoRepository;
-import com.joe.mvvmjavaarch.model.RestaurantMerchantInfoBean;
-import com.joe.mvvmjavaarch.util.ProgressDialogUtil;
-import com.joe.mvvmjavaarch.viewmodel.InfoViewModel;
-import com.joe.mvvmjavaarch.R;
-import com.joe.mvvmjavaarch.model.UserData;
+import com.joe.taiwandelicacies.adapter.RestaurantListAdapter;
+import com.joe.taiwandelicacies.databinding.ActivityMainBinding;
+import com.joe.taiwandelicacies.model.InfoFactory;
+import com.joe.taiwandelicacies.model.InfoRepository;
+import com.joe.taiwandelicacies.model.RestaurantMerchantInfoBean;
+import com.joe.taiwandelicacies.util.ProgressDialogUtil;
+import com.joe.taiwandelicacies.viewmodel.InfoViewModel;
 
 import java.util.ArrayList;
 

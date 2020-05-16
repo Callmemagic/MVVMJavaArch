@@ -1,6 +1,6 @@
-package com.joe.mvvmjavaarch.APIInterface;
+package com.joe.taiwandelicacies.APIInterface;
 
-import com.joe.mvvmjavaarch.value.ConstantValue;
+import com.joe.taiwandelicacies.value.ConstantValue;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

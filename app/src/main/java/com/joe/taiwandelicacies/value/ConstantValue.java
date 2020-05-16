@@ -1,4 +1,4 @@
-package com.joe.mvvmjavaarch.value;
+package com.joe.taiwandelicacies.value;
 
 /**
  * author: Joe Cheng

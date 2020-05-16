@@ -1,4 +1,4 @@
-package com.joe.mvvmjavaarch.util;
+package com.joe.taiwandelicacies.util;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.joe.mvvmjavaarch.R;
+import com.joe.taiwandelicacies.R;
 
 public class ProgressDialogUtil {
     private static AlertDialog mAlertDialog;

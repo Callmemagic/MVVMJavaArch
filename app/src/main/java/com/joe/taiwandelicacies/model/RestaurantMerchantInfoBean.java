@@ -1,4 +1,4 @@
-package com.joe.mvvmjavaarch.model;
+package com.joe.taiwandelicacies.model;
 
 import androidx.annotation.NonNull;
 

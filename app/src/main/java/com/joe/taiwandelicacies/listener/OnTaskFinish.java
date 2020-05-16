@@ -1,7 +1,6 @@
-package com.joe.mvvmjavaarch.listener;
+package com.joe.taiwandelicacies.listener;
 
-import com.joe.mvvmjavaarch.model.RestaurantMerchantInfoBean;
-import com.joe.mvvmjavaarch.model.UserData;
+import com.joe.taiwandelicacies.model.RestaurantMerchantInfoBean;
 
 import java.util.ArrayList;
 

@@ -1,13 +1,12 @@
-package com.joe.mvvmjavaarch.viewmodel;
+package com.joe.taiwandelicacies.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.joe.mvvmjavaarch.model.InfoRepository;
-import com.joe.mvvmjavaarch.listener.OnTaskFinish;
-import com.joe.mvvmjavaarch.model.RestaurantMerchantInfoBean;
-import com.joe.mvvmjavaarch.model.UserData;
+import com.joe.taiwandelicacies.model.InfoRepository;
+import com.joe.taiwandelicacies.listener.OnTaskFinish;
+import com.joe.taiwandelicacies.model.RestaurantMerchantInfoBean;
 
 import java.util.ArrayList;
 

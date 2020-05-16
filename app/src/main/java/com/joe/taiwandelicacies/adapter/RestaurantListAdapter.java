@@ -1,4 +1,4 @@
-package com.joe.mvvmjavaarch.adapter;
+package com.joe.taiwandelicacies.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.joe.mvvmjavaarch.R;
-import com.joe.mvvmjavaarch.model.RestaurantMerchantInfoBean;
+import com.joe.taiwandelicacies.R;
+import com.joe.taiwandelicacies.model.RestaurantMerchantInfoBean;
 
 import java.util.ArrayList;
 

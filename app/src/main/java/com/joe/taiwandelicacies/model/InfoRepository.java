@@ -1,8 +1,8 @@
-package com.joe.mvvmjavaarch.model;
+package com.joe.taiwandelicacies.model;
 
-import com.joe.mvvmjavaarch.APIInterface.APIInterface;
-import com.joe.mvvmjavaarch.APIInterface.RetrofitManager;
-import com.joe.mvvmjavaarch.listener.OnTaskFinish;
+import com.joe.taiwandelicacies.APIInterface.APIInterface;
+import com.joe.taiwandelicacies.APIInterface.RetrofitManager;
+import com.joe.taiwandelicacies.listener.OnTaskFinish;
 
 import java.util.ArrayList;
 

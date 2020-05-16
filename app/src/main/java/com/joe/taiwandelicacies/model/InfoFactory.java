@@ -1,15 +1,10 @@
-package com.joe.mvvmjavaarch.model;
-
-import android.app.Application;
+package com.joe.taiwandelicacies.model;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.joe.mvvmjavaarch.model.InfoRepository;
-import com.joe.mvvmjavaarch.model.UserData;
-import com.joe.mvvmjavaarch.viewmodel.InfoViewModel;
+import com.joe.taiwandelicacies.viewmodel.InfoViewModel;
 
 /**
  * author: Joe Cheng

@@ -1,6 +1,6 @@
-package com.joe.mvvmjavaarch.APIInterface;
+package com.joe.taiwandelicacies.APIInterface;
 
-import com.joe.mvvmjavaarch.model.UserData;
+import com.joe.taiwandelicacies.model.UserData;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
