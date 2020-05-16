@@ -1,19 +1,24 @@
 package com.joe.mvvmjavaarch.model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
+
 /**
  * author: Joe Cheng
  */
 
 //先寫個bean
 public class UserData {
-    String userName;
-    int userAge;
 
-    public String getUserName() {
-        return userName;
+    @SerializedName("XML_Head")
+    private RestaurantBean beans;
+
+    public RestaurantBean getRestaurants()
+    {
+        return beans;
     }
 
-    public int getUserAge() {
-        return userAge;
-    }
+
 }

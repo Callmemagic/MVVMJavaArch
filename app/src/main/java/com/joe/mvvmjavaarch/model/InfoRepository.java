@@ -1,22 +1,41 @@
 package com.joe.mvvmjavaarch.model;
 
+import com.joe.mvvmjavaarch.APIInterface.APIInterface;
+import com.joe.mvvmjavaarch.APIInterface.RetrofitManager;
 import com.joe.mvvmjavaarch.listener.OnTaskFinish;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * author: Joe Cheng
  */
 public class InfoRepository {
-    public void loadInfo(OnTaskFinish onTaskFinish)
+    public void loadInfo(final OnTaskFinish onTaskFinish)
     {
         //資料來源可以是DB或是Webservice
         //如果要寫資料來源，可以先建立個interface(ex. UserRepoInterface)，
         //再寫兩個class去implement這個interface(ex. RemoteRepoClass, LocalRepoClass)
 
-        //有空的時候，抓公開資料來試試看這個架構可不可行
+        //Retrofit 2
+        APIInterface apiInterface = RetrofitManager.getInstance().getApiInterface();
+        Call<UserData> dataCall = apiInterface.getRestaurantInfo();
+        dataCall.enqueue(new Callback<UserData>() {
+            @Override
+            public void onResponse(Call<UserData> call, Response<UserData> response) {
+                RestaurantBean temp = response.body().getRestaurants();
+                RestaurantInfoBean alInfoBeans = temp.getAlInfo();
+                ArrayList<RestaurantMerchantInfoBean> alInfo = alInfoBeans.getAlMerchantInfo();
+                onTaskFinish.onFinish(alInfo);
+            }
 
-        UserData userData = new UserData();
-        userData.userAge = 24;
-        userData.userName = "Joe";
-        onTaskFinish.onFinish(userData);
+            @Override
+            public void onFailure(Call<UserData> call, Throwable t) {
+                onTaskFinish.onError(t.getMessage());
+            }
+        });
     }
 }
