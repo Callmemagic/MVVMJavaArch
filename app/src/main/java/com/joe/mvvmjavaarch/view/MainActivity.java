@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //讓View去觀察Viewmodel的變化
+                //被觀察者通知觀察者 => observable observe observer
                 infoViewModel.CallInfo().observe(MainActivity.this, new Observer<UserData>() {
                     @Override
                     public void onChanged(UserData userData) {
